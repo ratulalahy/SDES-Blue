@@ -1,0 +1,47 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="customTheme">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/titletextcolor</item>
+        <item name="colorPrimaryDark">@color/transparentDarkBlue</item>
+        <item name="colorAccent">@color/semiTransparentWhite</item>
+    </style>
+    <style name="WindowTitleBackground">
+        <item name="android:background">@color/transparentDarkBlue</item>
+    </style>
+
+    <style name="EditTextHinTemp" parent="TextAppearance.AppCompat">
+        <item name="colorAccent">@android:color/white</item>
+        <item name="android:textColorHint">@color/semiTransparentWhite</item>
+        <item name="colorControlNormal">@color/colorPrimaryDark</item>
+        <item name="colorControlActivated">@color/titletextcolor</item>
+        <item name="colorControlHighlight">@color/titletextcolor</item>
+    </style>
+
+    <style name="EditTextHint" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/semiTransparentWhite</item>
+        <item name="android:textColorHint">@color/semiTransparentWhite</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="editTextLogin" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="colorControlNormal">@color/colorPrimary</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/colorAccent</item>
+    </style>
+
+    <style name="styleChatItemText">
+        <item name="android:textColor">@color/pureWhite</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+
+</resources>

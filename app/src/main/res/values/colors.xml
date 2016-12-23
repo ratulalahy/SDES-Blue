@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#AAFFFFFF</color>
+    <color name="transparentButton">#55c2d8e3</color>
+    <color name="pureWhite">#FFFFFF</color>
+    <color name="semiTransparentWhite">#99FFFFFF</color>
+    <color name="semiGrey">#cacaca</color>
+
+
+    <color name="transparentDarkBlue">#113F51B5</color>
+    <color name="titletextcolor">#1d428c</color>
+    <color name="toggleRed">#55e7bbbb</color>
+    <color name="toggleGreen">#55bce9bc</color>
+</resources>

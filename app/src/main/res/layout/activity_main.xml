@@ -1,0 +1,131 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:id="@+id/lowerPartContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+            <ProgressBar
+                android:id="@+id/progressBarSend"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:progressDrawable="@drawable/customprogressbar" />
+
+            <ProgressBar
+                android:id="@+id/progressBarReceive"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:progressDrawable="@drawable/customprogressbar" />
+
+            <LinearLayout
+                android:id="@+id/layEditHolder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/messageEdit"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="82"
+                    android:hint="type message"
+                    android:inputType="textMultiLine"
+                    android:lines="4"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@color/semiTransparentWhite" />
+
+                <Button
+                    android:id="@+id/btnSendText"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/semiTransparentWhite"
+                    android:background="@drawable/style_sign_in_button"
+                    android:layout_weight="18"
+                    android:text="send" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/AttachmentOptionHolder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/buttonImageBrowse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:adjustViewBounds="true"
+                    android:cropToPadding="false"
+                    android:background="#00000000"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/image_type" />
+
+                <ImageButton
+                    android:id="@+id/btnFileBrowse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+
+                    android:adjustViewBounds="true"
+                    android:cropToPadding="false"
+                    android:background="#00000000"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/doc_type" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <ListView
+            android:id="@+id/messagesContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/lowerPartContainer"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentStart="false"
+            android:layout_alignParentTop="false"
+            android:layout_below="@+id/meLbl"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:divider="@null"
+            android:listSelector="@android:color/transparent"
+            android:transcriptMode="alwaysScroll" />
+
+        <TextView
+            android:id="@+id/meLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:singleLine="false"
+            android:text="MySelf"
+            android:textColor="@android:color/white"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/friendLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="Friend"
+            android:textColor="@android:color/white"
+            android:textColorHint="@color/semiTransparentWhite"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+</LinearLayout>
